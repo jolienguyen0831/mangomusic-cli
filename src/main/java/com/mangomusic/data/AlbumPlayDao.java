@@ -49,9 +49,6 @@ public class AlbumPlayDao {
                     plays.add(new AlbumPlay(playId, uid, albumId, playedAt, completed, albumTitle, artistName));
                 }
             }
-
-            statement.close();
-
         } catch (SQLException e) {
             System.err.println("Error getting user plays: " + e.getMessage());
             e.printStackTrace();
